@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07110c">
+  <title>Analista Futebol AO VIVO</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div class="live">● AO VIVO</div>
+      <h1>Analista de Futebol</h1>
+      <p>2 jogadores + 1 mercado conservador, ou não apostar.</p>
+    </header>
+
+    <section class="card">
+      <label>Jogo</label>
+      <input id="jogo" placeholder="Ex.: Flamengo x Palmeiras">
+
+      <div class="row">
+        <div>
+          <label>Minuto da sua TV</label>
+          <input id="minuto" placeholder="Ex.: 63:20">
+        </div>
+        <div>
+          <label>Placar da sua TV</label>
+          <input id="placar" placeholder="Ex.: 1 x 0">
+        </div>
+      </div>
+
+      <label>O que você está vendo? (opcional)</label>
+      <textarea id="observacoes" rows="3" placeholder="Ex.: Palmeiras está pressionando..."></textarea>
+
+      <button id="analisar">⚽ ANALISAR AGORA</button>
+      <p class="note">Seu minuto e placar têm prioridade quando os sites estiverem atrasados.</p>
+    </section>
+
+    <div id="status" class="status hidden"></div>
+    <section id="resultado" class="card result hidden"></section>
+
+    <footer>⚠️ Apostas envolvem risco financeiro. Nenhuma seleção é garantia.</footer>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
